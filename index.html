@@ -7,23 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
+    <div class="menu">
+        <a href="javascript:;" id="btnAddSolar" onclick="addSolarPanel()">Adicionar placa solar (> 50 W)</a>
+    </div>
     <div class="container">
-        <div id="house" class="house"></div>
+        <div id="house" class="house">
+            <span style="display: none">-1 W</span>
+        </div>
+        <div id="sun" class="sun"></div>
+        <div id="vento" class="cable"></div>
         <div id="tree1" class="tree"></div>
         <div id="tree2" class="tree"></div>
         <div id="tree3" class="tree"></div>
         <div class="windmill-container">
+            <div id="cable1" class="cable"></div>
+            <div id="cable2" class="cable"></div>
             <div id="windmill-body" class="windmill-body"></div>
             <div id="windmill" class="windmill"></div>
             <div style="clear: both"></div>
             <div id="battery" class="battery">0 W</div>
+            <div id="solarpanel" class="solarpanel2">
+                <input type="hidden" id="statusSolar" value="0" />
+            </div>
         </div>
+    </div>
 
-        <div class="background-div1"></div>
-        <div class="background-div2"></div>
+    <div class="background-div1"></div>
+    <div class="background-div2"></div>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
-        <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
